@@ -1,0 +1,114 @@
+body{
+    width:100%;
+    height:auto;
+    background-color:black;
+    color:white;
+    border:0;
+    
+    font-family: Pretendard,sans-serif;
+    
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 13pt;
+    }
+    .main-background{
+        background-size:cover;
+    }
+    .main-container{
+        padding:20px 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 20pt;
+    }
+    .main-background{
+        /* 조정필요 */
+        background-size:50%;
+        
+    }
+    .main-container{
+        padding:100px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        font-size: 18pt;
+    }
+    .main-background{
+        /* 조정필요 */
+        background-size:70%;
+    }
+    .main-container{
+        padding:100px;
+    }
+}
+
+  
+
+.warning_com{
+    display:none;
+}
+
+
+.loading{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    z-index:99;
+    background-color:black;
+    font-size:30px;
+    position:fixed;
+    top:0;
+}
+
+
+.main-background{
+    background-color:black;
+    width:100%;
+    
+
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    background-position:center;
+    background-repeat:no-repeat;
+    z-index:1;
+    
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincha{
+    opacity:0;
+    position:absolute;
+    text-align: center;
+    line-height:30px;
+}
+
+
+.main-container{
+    width:auto;
+    height:2000px;
+    background-color:black;
+    
+    position:relative;
+    z-index: 2;
+    margin-top:1000vh;
+}
+
+footer{
+    position:relative;
+}
