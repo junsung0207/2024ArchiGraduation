@@ -18,8 +18,8 @@ body{
         background-size:cover;
     }
     .main-container{
-        padding:20px 20px;
-        
+        padding:20px 10%;
+
 
     }
 }
@@ -34,7 +34,7 @@ body{
         
     }
     .main-container{
-        padding:100px;
+        /* padding:100px; */
     }
 }
 
@@ -47,7 +47,7 @@ body{
         background-size:70%;
     }
     .main-container{
-        padding:100px;
+        /* padding:100px; */
     }
 }
 
@@ -102,13 +102,14 @@ body{
 
 
 .main-container{
-    width:auto;
+    width:80%;
     height:2000px;
     background-color:black;
     
-    position:relative;
+    position:absolute;
+    top:8400px;
+    height:200vh;
     z-index: 2;
-    margin-top:1000vh;
 }
 
 footer{

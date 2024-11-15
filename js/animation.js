@@ -1,9 +1,10 @@
 document.addEventListener("imagesLoaded", () => {
     const mainBackground = document.querySelector(".main-background");
+    const mainContainer = document.querySelector(".main-container");
     const maincha1 = document.getElementById("Maincha1");
     const maincha2 = document.getElementById("Maincha2");
     const maincha3 = document.getElementById("Maincha3");
-    const totalImages = 38; // 이미지의 총 개수
+    const totalImages = 60; // 이미지의 총 개수
     const scrollThreshold = 5000; // 스크롤의 이미지 전환 범위 (5000)
     const startScroll = 2700; // 이미지 전환이 시작되는 스크롤 값
 
@@ -24,7 +25,7 @@ document.addEventListener("imagesLoaded", () => {
 
     //background fade out Animation
     const fadeOutStart = startScroll + scrollThreshold; // 배경이 사라지기 시작하는 지점 (7700)
-    const fadeOutDuration = 500; // 배경이 사라지는 범위 (7700-8700)
+    const fadeOutDuration = 500; // 배경이 사라지는 범위 (7700~X)
     const fadeOutEnd = fadeOutStart + fadeOutDuration; // 배경이 완전히 사라지는 지점 (8700)
 
     // 새로고침 시 페이지를 맨 위로 스크롤
