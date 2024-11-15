@@ -15,7 +15,7 @@ body{
         font-size: 13pt;
     }
     .main-background{
-        background-size:cover;
+        
     }
     .main-container{
         padding:20px 10%;
@@ -91,6 +91,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    will-change: background-image;
 }
 
 .maincha{

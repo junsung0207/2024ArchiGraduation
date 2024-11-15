@@ -32,7 +32,7 @@ document.addEventListener("imagesLoaded", () => {
     window.scrollTo(0, 0);
 
     // 초기 이미지 설정
-    const firstImageUrl = `./img/posterMotion/PM0.jpg`; // 첫 이미지 경로 설정
+    const firstImageUrl = `./img/posterMotion/PM0.webp`; // 첫 이미지 경로 설정
     mainBackground.style.backgroundImage = `url(${firstImageUrl})`;
 
 
@@ -46,7 +46,7 @@ document.addEventListener("imagesLoaded", () => {
             console.log("보정된 스크롤 값:", scrollFraction);
             // 이미지 인덱스 계산
             const imageIndex = Math.floor(scrollFraction * (totalImages - 1)); // 0부터 시작
-            const imageUrl = `./img/posterMotion/PM${imageIndex}.jpg`; // 이미지 경로 설정
+            const imageUrl = `./img/posterMotion/PM${imageIndex}.webp`; // 이미지 경로 설정
             // 배경 이미지 업데이트
             mainBackground.style.backgroundImage = `url(${imageUrl})`;
         }

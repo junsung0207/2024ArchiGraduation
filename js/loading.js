@@ -5,11 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // 스크롤 비활성화
     document.body.style.overflow = "hidden";
 
+    
     // 모든 이미지 미리 로드
+    const images = [];
     let imagesLoaded = 0;
     for (let i = 0; i < totalImages; i++) {
         const img = new Image();
-        img.src = `./img/posterMotion/PM${i}.jpg`; // 이미지 경로 설정
+        img.src = `./img/posterMotion/PM${i}.webp`; // 이미지 경로 설정
+        images.push(img);
         img.onload = () => {
             imagesLoaded++;
             // 모든 이미지가 로드되면 loading 요소 숨기기 및 스크롤 활성화
