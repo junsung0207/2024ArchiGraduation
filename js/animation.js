@@ -43,7 +43,7 @@ document.addEventListener("imagesLoaded", () => {
         // 이미지 전환 Animation
         if (scrollTop >= startScroll && scrollTop <= startScroll + scrollThreshold) {
             const scrollFraction = (scrollTop - startScroll) / scrollThreshold; // 0에서 1 사이로 변환
-            console.log("보정된 스크롤 값:", scrollFraction);
+            // console.log("보정된 스크롤 값:", scrollFraction);
             // 이미지 인덱스 계산
             const imageIndex = Math.floor(scrollFraction * (totalImages - 1)); // 0부터 시작
             const imageUrl = `./img/posterMotion/PM${imageIndex}.webp`; // 이미지 경로 설정
