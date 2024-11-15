@@ -33,7 +33,7 @@ document.addEventListener("imagesLoaded", () => {
     window.scrollTo(0, 0);
 
     // 초기 이미지 설정
-    backgroundImage.src = `./img/posterMotion/PM0.jpg`;
+    backgroundImage.src = `./img/posterMotion/PM0.webp`;
     
 
     window.addEventListener("scroll", () => {
@@ -47,7 +47,7 @@ document.addEventListener("imagesLoaded", () => {
             // 이미지 인덱스 계산
             const imageIndex = Math.floor(scrollFraction * (totalImages - 1)); // 0부터 시작
             // 배경 이미지 업데이트
-            backgroundImage.src = `./img/posterMotion/PM${imageIndex}.jpg`;
+            backgroundImage.src = `./img/posterMotion/PM${imageIndex}.webp`;
         }
 
         
