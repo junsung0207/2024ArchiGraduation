@@ -1,6 +1,7 @@
 document.addEventListener("imagesLoaded", () => {
     const mainBackground = document.querySelector(".main-background");
     const mainContainer = document.querySelector(".main-container");
+    const backgroundImage = document.querySelector(".background-image");
     const maincha1 = document.getElementById("Maincha1");
     const maincha2 = document.getElementById("Maincha2");
     const maincha3 = document.getElementById("Maincha3");
@@ -32,9 +33,8 @@ document.addEventListener("imagesLoaded", () => {
     window.scrollTo(0, 0);
 
     // 초기 이미지 설정
-    const firstImageUrl = `./img/posterMotion/PM0.webp`; // 첫 이미지 경로 설정
-    mainBackground.style.backgroundImage = `url(${firstImageUrl})`;
-
+    backgroundImage.src = `./img/posterMotion/PM0.jpg`;
+    
 
     window.addEventListener("scroll", () => {
         // 스크롤 값 계산
@@ -46,9 +46,8 @@ document.addEventListener("imagesLoaded", () => {
             // console.log("보정된 스크롤 값:", scrollFraction);
             // 이미지 인덱스 계산
             const imageIndex = Math.floor(scrollFraction * (totalImages - 1)); // 0부터 시작
-            const imageUrl = `./img/posterMotion/PM${imageIndex}.webp`; // 이미지 경로 설정
             // 배경 이미지 업데이트
-            mainBackground.style.backgroundImage = `url(${imageUrl})`;
+            backgroundImage.src = `./img/posterMotion/PM${imageIndex}.jpg`;
         }
 
         
