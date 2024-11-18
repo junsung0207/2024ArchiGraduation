@@ -101,6 +101,10 @@ body::-webkit-scrollbar {
     #Feed1 .feed-text:nth-child(1){
         font-size:36px !important;
     }
+    #Menu-Logo{
+        width: 100px !important;;
+        height: 100px !important;;
+    }
 }
 
   
@@ -184,6 +188,17 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
+#Menu-Logo{
+    width:60px;
+    height:60px;
+    opacity:0.7;
+    transition:opacity 0.3s ease;
+}
+
+#Menu-Logo:hover{
+    opacity:1;
+}
+
 .menu-border{
     width:50%;
     height:1px;
@@ -240,8 +255,49 @@ body::-webkit-scrollbar {
 }
 
 #Feed3{
-    height:700px;
+    height:1500px;
     background-color:rgb(29, 29, 29);
+    font-weight:300;
+}
+
+.event-button{
+    width:auto;
+    padding:4px 25px;
+    height:100%;
+    border:1px solid gray;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    transition:background-color 0.2s ease;
+    /* background:linear-gradient(180deg, rgba(29, 29, 29,1) 0%, rgba(29, 29, 29,1) 50%, rgba(0,0,0,1) 100%); */
+}
+
+.event-button:hover{
+    background-color:gray;
+}
+
+.event-button-container{
+    width:100%;
+    height:30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+#Feed3 .feed-text{
+    margin-bottom:30px;
+}
+
+
+
+#Feed3 .feed-text:nth-child(1){
+    font-weight: bold;
+    font-size:13pt;
 }
 
 #Feed4{

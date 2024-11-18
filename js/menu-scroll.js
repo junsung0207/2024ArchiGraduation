@@ -14,7 +14,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 현재 스크롤에 따라 메뉴 스타일 업데이트
     window.addEventListener("scroll", () => {
+
         const scrollTop = window.scrollY;
+
+        if (scrollTop >= 3000) {
+            // 8200 이상에서 화살표 숨기기
+            arrow.style.display = "none";
+            arrowtext.style.display = "none";
+        } else if (scrollTop < 3000) {
+            // 7700 아래로 스크롤 시 화살표 표시
+            arrow.style.display = "block";
+            arrowtext.style.display = "block";
+        }
 
         menuItems.forEach((menuItem) => {
             // 각 메뉴의 스크롤 범위 가져오기
@@ -75,16 +86,16 @@ function scrollToTarget() {
 }
 
 // 화살표 표시/숨김 처리
-window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
+// window.addEventListener("scroll", () => {
+//     const scrollTop = window.scrollY;
 
-    if (scrollTop >= 3000) {
-        // 8200 이상에서 화살표 숨기기
-        arrow.style.display = "none";
-        arrowtext.style.display = "none";
-    } else if (scrollTop < 3000) {
-        // 7700 아래로 스크롤 시 화살표 표시
-        arrow.style.display = "block";
-        arrowtext.style.display = "block";
-    }
-});
+//     if (scrollTop >= 3000) {
+//         // 8200 이상에서 화살표 숨기기
+//         arrow.style.display = "none";
+//         arrowtext.style.display = "none";
+//     } else if (scrollTop < 3000) {
+//         // 7700 아래로 스크롤 시 화살표 표시
+//         arrow.style.display = "block";
+//         arrowtext.style.display = "block";
+//     }
+// });
