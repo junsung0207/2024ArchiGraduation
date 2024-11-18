@@ -34,6 +34,9 @@ body{
     footer{
         font-size:6pt;
     }
+    .feed{
+        font-size:10pt;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -52,11 +55,15 @@ body{
     footer{
         font-size:10pt;
     }
+    .feed{
+        font-size:10pt;
+    }
+    
 }
 
 @media screen and (min-width: 1600px) {
     body {
-        font-size: 18pt;
+        font-size: 25pt;
     }
     .main-container{
         padding:100px 0 20px;
@@ -78,7 +85,12 @@ body{
     footer{
         font-size:10pt;
     }
-    
+    .feed{
+        font-size:20pt;
+    }
+    #Feed1 .feed-text:nth-child(1){
+        font-size:36px !important;
+    }
 }
 
   
@@ -183,7 +195,7 @@ body{
 
 .feed{
     padding:0 10%;
-    font-size:10pt;
+    
     font-weight: 500;
     text-align: end;
     /* border:1px solid gray; */
@@ -194,7 +206,18 @@ body{
 
 #Feed1{
     height:1600px;
-    line-height: 200px;
+    line-height:50px;
+}
+
+#Feed1 .feed-text{
+    margin-top:150px;
+    font-weight:200;
+    text-wrap:balance;
+}
+
+#Feed1 .feed-text:nth-child(1){
+    font-weight:500;
+    font-size:15px;
 }
 
 #Feed1 .feed-poster{
@@ -235,9 +258,10 @@ body{
     cursor: pointer;
 }
 
-#Poster2023{
-    margin-bottom:40px;
+#Feed6 .feed-text .feed-poster{
+    margin-bottom:30px;
 }
+
 
 .feed-poster{
     width:auto;
